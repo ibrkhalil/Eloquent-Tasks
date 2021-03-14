@@ -40,3 +40,17 @@
 //         gridRow='';}
 // }
 // task 3
+
+// let min = (x,y) => (x>y) ? y : x;
+// task 4
+
+// let recursiveEvenOdd = (x) => {
+//     if (x == 2)
+//         return true;
+//     else if(x == 1)
+//         return false;
+//     else
+//         return recursiveEvenOdd(x-2);
+// }
+// task 5
+
