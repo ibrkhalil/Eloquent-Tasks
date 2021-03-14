@@ -9,7 +9,6 @@
 // }
 // task 1
 
-
 // for(let i = 1; i<=100; ++i){
 //     if(i % 5 == 0 && i % 3 == 0)
 //         console.log('fizzbuzz');
@@ -66,3 +65,43 @@
 //     }
 // task 6
 
+// let range = (arrStr,arrEnd,step=1) => {
+//     let nums = [];
+//     if(step>=1)
+//     for(let i = arrStr; i<=arrEnd ; i+=step)
+//         nums.push(i);
+//     else{
+//         for(let i = arrStr; i>=arrEnd ; i+=step)
+//         nums.push(i); 
+//     }
+//     return nums;
+// }
+// console.log(range(5,2,-1));
+
+// let sum = (arr) => {
+//     let total = 0;
+//     for(let i = 0; i<=arr.length; ++i){
+//         total += i;
+//     }
+//     return total
+// }
+// console.log(sum(range(1,10)));
+// task 7
+
+// let reverse = (arr) => {
+//     let newArr = [];
+//     for(let i = 0; i<arr.length; ++i)
+//         newArr.unshift(arr[i])
+//     return newArr;
+// }
+
+// let reverseInPlace = (arr) => {
+//     let temp = []
+//     let length = arr.length;
+//     for(let i = 0; i<length ; ++i){
+//         temp[i] = arr.pop();
+//     }
+//     return temp;
+// }
+// console.log(reverseInPlace([10,20,30,40]));
+// task 8
