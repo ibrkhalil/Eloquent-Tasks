@@ -54,3 +54,15 @@
 // }
 // task 5
 
+// let countBs = (str) => {
+//     return countChar(str,"B")
+// }
+// let countChar = (str,target) => {
+//     let count = 0;
+//     for(let i = 0; i<str.length; ++i)
+//         if(str[i] == target)
+//         count++;
+//         return count;
+//     }
+// task 6
+
