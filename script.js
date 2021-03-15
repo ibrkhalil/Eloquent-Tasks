@@ -105,3 +105,28 @@
 // }
 // console.log(reverseInPlace([10,20,30,40]));
 // task 8
+
+// let newArr = [];
+// let listToArray = (list) => {
+//     if(list === undefined)
+//         return newArr;
+//     newArr.unshift(list.value)
+//     // console.log(newArr);
+//     return listToArray(list.rest)
+// }
+
+// let arrayToList = (arr) => {
+//     let rest;
+//     for(let i = 0; i<arr.length; ++i)
+//        rest = {
+//             value:arr[i],
+//             rest
+//         }        
+        
+//     return rest;
+// }
+// console.log(listToArray(arrayToList([1,2,3])));
+// task 9
+
+
+
