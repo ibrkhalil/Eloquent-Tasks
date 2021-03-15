@@ -128,5 +128,25 @@
 // console.log(listToArray(arrayToList([1,2,3])));
 // task 9
 
+// let deepEqual = (x,y) => {
+//     if (x === y)
+//         return true;
+//     else if (typeof x === undefined || typeof y === undefined)
+//         return false;
+    
 
+//         if(typeof x === 'object' && typeof y === 'object')        
+//          {
+//             if(x === null || y === null)
+//                 return false
+//             else
+//             for(let i = 0; i < Object.keys(x).length; ++i)
+//                 if(Object.keys(x)[i] !== Object.keys(y)[i])
+//                 return false;
+//             return true;    
+//          }
+//         return false
+// }
+
+// task 10
 
