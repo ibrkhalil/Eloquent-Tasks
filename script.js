@@ -122,7 +122,7 @@
 //             value:arr[i],
 //             rest
 //         }        
-        
+
 //     return rest;
 // }
 // console.log(listToArray(arrayToList([1,2,3])));
@@ -133,7 +133,7 @@
 //         return true;
 //     else if (typeof x === undefined || typeof y === undefined)
 //         return false;
-    
+
 
 //         if(typeof x === 'object' && typeof y === 'object')        
 //          {
@@ -161,14 +161,14 @@
 // task 11
 
 // let loop = (val,test,update,body) => {
-    
+
 //     for(;;){
 //         if(!test(val))
 //             break
 //         else
 //         {
 //             body(val)
-            
+
 //         }
 //         val += update;
 //     }
@@ -219,3 +219,139 @@
 // }
 
 // didn't solve task 14 (Dominant Writing Direction)
+/************************************************************************************************************************************************* */
+// class Vector {
+//     constructor(x,y){
+//         this.x = x;
+//         this.y = y;
+//         this.magnitude = Math.sqrt (Math.pow(x,2) + Math.pow(y,2));
+//     }
+
+//     plus(vector){
+//         return this.magnitude + vector.magnitude
+//     }
+
+//     minus(vector){
+//         return this.magnitude - vector.magnitude
+//     }
+
+//     get length(){
+//         return this.magnitude
+//     }
+// }
+
+
+// let v1 = new Vector(2,2);
+// let v2 = new Vector(4,4);
+// console.log();
+
+// task 15
+
+// class Group {
+//     constructor(arr) {
+//         this.arr = arr;
+//     }
+
+//     add(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (item === this.arr[i])
+//                 return null;
+//         this.arr.push(item)
+//     }
+
+//     delete(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (this.arr[i] === item)
+//                 this.arr.splice(i, 1)
+//     }
+
+//     has(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (this.arr[i] === item)
+//                 return true;
+//         return false;
+//     }
+
+//     static from(arr) {
+//         let temp = [];
+//             arr.map((item,index) => {
+//                 for(let i = index+1; i<arr.length; ++i)
+//                     if(arr[i] === item)
+//                         arr.splice(i,1)
+//             })   
+//         return arr;
+//     }
+// }
+
+// task 16
+
+// class Group {
+//     constructor(arr) {
+//         this.arr = arr;
+//     }
+
+//     add(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (item === this.arr[i])
+//                 return null;
+//         this.arr.push(item)
+//     }
+
+//     delete(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (this.arr[i] === item)
+//                 this.arr.splice(i, 1)
+//     }
+
+//     has(item) {
+//         for (let i = 0; i < this.arr.length; ++i)
+//             if (this.arr[i] === item)
+//                 return true;
+//         return false;
+//     }
+
+//     static from(arr) {
+//         let temp = [];
+//             arr.map((item,index) => {
+//                 for(let i = index+1; i<arr.length; ++i)
+//                     if(arr[i] === item)
+//                         arr.splice(i,1)
+//             })   
+//         return arr;
+//     }
+// }
+
+// class GroupIterator {
+//     constructor(items){
+//         this.items = items;
+//         this.count = -1;
+//     }
+
+//     next() {
+        
+//         if(this.items.length === this.count) return {done: true}
+
+//         return {value:this.items[this.count+=1],done:false}
+//     }
+// }
+
+// let Iterator = new GroupIterator(Group.from([1,2,3]))
+// console.log(Iterator.next());
+// console.log(Iterator.next());
+// console.log(Iterator.next());
+// console.log(Iterator.next());
+
+// task 17
+
+// let obj = Object.create(null)
+// console.log(obj);
+// obj.hasOwnProperty = (prop) => {
+//     for(key in obj)
+//         if(key === prop)
+//         return true
+//         return false
+// }
+// console.log(obj.hasOwnProperty("hasOwnProperty")) 
+// console.log(Object.prototype.hasOwnProperty("hasOwnProperty"))
+
+// task 18
