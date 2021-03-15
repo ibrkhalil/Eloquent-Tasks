@@ -150,3 +150,72 @@
 
 // task 10
 
+// let reducer = (arr) => 
+//         arr.reduce((accumulator,currentValue) => {
+//            return accumulator = accumulator.concat(currentValue)
+//         },[])
+
+// let test = [[10,20,30],[40,50,60],[70,80,90]]
+// console.log(reducer(test))
+
+// task 11
+
+// let loop = (val,test,update,body) => {
+    
+//     for(;;){
+//         if(!test(val))
+//             break
+//         else
+//         {
+//             body(val)
+            
+//         }
+//         val += update;
+//     }
+// }
+// let i = 1;
+// loop( i, test => test<10,1,(i) => {console.log(i)})
+
+// task 12
+
+// let everyLoop = (arr,test) => {
+//     for(let i = 0; i < arr.length; ++i)
+//     {
+//         if(!test(arr[i]))
+//             return false
+//     }
+//     return true
+// }
+
+// let everyLoopSome = (arr,test) => {
+//     let result = arr.some(test)
+//     return result
+// }
+
+// task 13
+
+// function characterScript(code) {
+//   for (let script of SCRIPTS) {
+//     if (script.ranges.some(([from, to]) => code >= from &&
+//                                            code < to)) {
+//       return script;
+//     }
+//   }
+//   return null;
+// }
+
+// function countBy(items, groupName) {
+//   let counts = [];
+//   for (let item of items) {
+//     let name = groupName(item);
+//     let known = counts.findIndex(c => c.name == name);
+//     if (known == -1) {
+//       counts.push({name, count: 1});
+//     } else {
+//       counts[known].count++;
+//     }
+//   }
+//   return counts;
+// }
+
+// didn't solve task 14 (Dominant Writing Direction)
