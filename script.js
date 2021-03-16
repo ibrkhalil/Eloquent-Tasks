@@ -328,7 +328,7 @@
 //     }
 
 //     next() {
-        
+
 //         if(this.items.length === this.count) return {done: true}
 
 //         return {value:this.items[this.count+=1],done:false}
@@ -355,3 +355,45 @@
 // console.log(Object.prototype.hasOwnProperty("hasOwnProperty"))
 
 // task 18
+
+// Retry
+// function MultiplicatorUnitFailure() {}
+
+// function primitiveMultiply(a, b) {
+//   if (Math.random() < 0.5)
+//     return a * b;
+//   else
+//     throw new MultiplicatorUnitFailure();
+// }
+
+
+// function reliableMultiply1(a, b) {
+//   try {
+//     return primitiveMultiply(a, b);
+//   } catch (e) {
+//     if (e instanceof MultiplicatorUnitFailure) {
+//       return reliableMultiply1(a, b);
+//     } else {
+//       throw e;
+//     }
+//   }
+// }
+
+// function reliableMultiply2(a, b) {
+//   for (;;) {
+//     try {
+//       return primitiveMultiply(a, b);
+//     } catch (e) {
+//       if (e instanceof MultiplicatorUnitFailure) {
+//         continue;
+//       } else
+//         throw e;
+//     }
+//   }
+// }
+
+// console.log(reliableMultiply1(8, 5));
+// console.log(reliableMultiply1(6, 6));
+// Solution of task "Retry" copied from https://gist.github.com/spamwax/53df78f3f3277b2fb65a and was studied.
+//  task 19
+
